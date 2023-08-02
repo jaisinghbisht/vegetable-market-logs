@@ -1,0 +1,416 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
+    margin: 0;
+}
+
+.width-100 {
+    width: 100%;
+    float: left;
+    position: sticky;
+}
+
+.width-50 {
+    width: 50%;
+    float: left;
+}
+
+.width-25 {
+    width: 25%;
+    float: left;
+}
+
+.width-75 {
+    width: 75%;
+    float: left;
+}
+
+.width-80 {
+    width: 80%;
+    float: left;
+}
+
+.width-60 {
+    width: 60%;
+    float: left;
+}
+
+.width-40 {
+    width: 40%;
+    float: left;
+}
+
+.width-33 {
+    width: 33%;
+    float: left;
+}
+
+.width-30 {
+    width: 30%;
+    float: left;
+}
+
+.width-20 {
+    width: 20%;
+    float: left;
+}
+
+.top-header {
+    background: #55DD33;
+    padding: 8px 0px;
+}
+
+.head1p1 {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.head1ul {
+    list-style: none;
+    float: right;
+}
+
+.head1ul li {
+    float: left;
+    padding-left: 10px;
+}
+
+.head1ul li a {
+    font-size: 12px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.head1ul li i {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.search-panel {
+    background: white;
+    padding: 12px 0px;
+    position: relative;
+}
+
+.search-textbox {
+    padding-left: 16px;
+    height: 42px;
+    width: 80%;
+    border: 1px solid #fff;
+    float: left;
+    z-index: 2;
+}
+
+.search-button {
+    height: 42px;
+    width: 80px;
+    border: none;
+    background: #55DD33;
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+
+.search-button i {
+    color: black;
+}
+
+.cart-sect {
+    list-style: none;
+    float: right;
+    margin-top: 8px;
+}
+
+.cart-sect li {
+    float: left;
+    padding: 0px 6px;
+}
+
+.cart-sect li a {
+    font-size: 14px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.cart-sect li i {
+    font-size: 14px;
+    color: black;
+}
+
+#container {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+#Menu {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#Menu a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.search {
+    padding: 14px;
+    color: rgb(29, 29, 29);
+    min-width: 25px;
+    text-align: center;
+    position: absolute;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    width: 20%;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 0 0 0px 0px;
+    position: absolute;
+    float: left;
+    top: 40.6%;
+    /* Position the list below the search bar */
+    left: 30%;
+    width: 27.6%;
+    background-color: rgb(133, 244, 142);
+    border-radius: 0 0 5px 5px;
+    /* Rounded corners at the bottom */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    /* Set the position to absolute */
+    z-index: 3;
+    /
+}
+
+.list-items {
+    padding: 5px 5px;
+}
+
+.list-items:hover {
+    background-color: #6ea460;
+}
+
+.addedToCart {
+    font-size: 1.5em;
+    margin-right: 25px;
+}
+
+#user {
+    display: flex;
+    /* float: right; */
+    align-items: center;
+}
+
+.userIcon {
+    font-size: 45px;
+}
+
+#log {
+    display: flex;
+}
+
+#input {
+    width: 35em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+
+#input::placeholder {
+    font-weight: bold;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#user a {
+    color: rgb(29, 29, 29)
+}
+
+@media(max-width: 1300px) {
+    #collection {
+        font-size: 13px;
+    }
+    #input {
+        width: 25em;
+    }
+}
+
+@media(max-width: 1212px) {
+    #collection {
+        font-size: 13px;
+    }
+    #input {
+        width: 20em;
+    }
+    .addedToCart {
+        font-size: 1.5em;
+        margin: 10px 20px;
+    }
+}
+
+@media(max-width: 1090px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.5fr;
+    }
+    #search {
+        display: none;
+    }
+}
+
+@media(max-width: 750px) {
+    #shopName {
+        font-size: 28px;
+    }
+    #collection {
+        font-size: 12px;
+    }
+    .userIcon {
+        font-size: 35px;
+    }
+    .addedToCart {
+        font-size: 1.2em;
+        margin: 10px 20px;
+    }
+}
+
+@media(max-width: 650px) {
+    #shopName {
+        font-size: 24px;
+    }
+    #collection {
+        font-size: 10px;
+    }
+    .userIcon {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 550px) {
+    #container {
+        padding: 20px 25px;
+    }
+}
+
+
+/* badge media */
+
+@media(max-width: 1480px) {
+    #badge {
+        right: 150px;
+    }
+}
+
+@media(max-width: 1426px) {
+    #badge {
+        right: 142px;
+    }
+}
+
+@media(max-width: 1360px) {
+    #badge {
+        right: 136px;
+    }
+}
+
+@media(max-width: 1320px) {
+    #badge {
+        right: 129px;
+    }
+}
+
+@media(max-width: 1259px) {
+    #badge {
+        right: 119px;
+    }
+}
+
+@media(max-width: 1212px) {
+    #badge {
+        right: 96px;
+    }
+}
+
+@media(max-width: 1155px) {
+    #badge {
+        right: 87px;
+    }
+}
+
+@media(max-width: 1090px) {
+    #badge {
+        right: 119px;
+    }
+}
+
+@media(max-width: 1030px) {
+    #badge {
+        right: 109px;
+    }
+}
+
+@media(max-width: 970px) {
+    #badge {
+        right: 100px;
+    }
+}
+
+@media(max-width: 910px) {
+    #badge {
+        right: 94px;
+    }
+}
+
+@media(max-width: 850px) {
+    #badge {
+        right: 87px;
+    }
+}
+
+@media(max-width: 750px) {
+    #badge {
+        right: 87px;
+        padding: 3px 6px;
+        font-size: 12px;
+        top: 12px;
+    }
+}
+
+@media(max-width: 650px) {
+    #badge {
+        right: 78px;
+    }
+}
+
+@media(max-width: 550px) {
+    #badge {
+        right: 62px;
+        top: 18px;
+    }
+}

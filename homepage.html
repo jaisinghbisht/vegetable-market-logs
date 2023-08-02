@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title> Green Grocer </title>
+</head>
+
+<body>
+    <!----------------------------- HEADER ----------------------------->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <script src="script.js"></script>
+
+    <!----------------------------- HERO SECTION ----------------------------->
+    <section class="hero-area">
+        <div class="text-box">
+            <h1>Welcome to Green Grocer</h1>
+            <p>Our mission is to revolutionize the way you experience vegetable shopping in India.
+                <br>We aim to provide real-time vegetable prices from various markets in different cities, ensuring you always make informed and budget-friendly choices.
+                <br> Learn more about our journey and team on our <a href="about.html" id="linkto-aboutus">About Us</a> page.
+            </p>
+            <a href="shopping.html" class="hero-btn">Click to Start Shopping</a>
+        </div>
+    </section>
+
+    <!----------------------------- FACILITIES ----------------------------->
+    <section class="facilities">
+        <br>
+        <h1>Services</h1><br>
+        <div class="facilities-row">
+            <div class="facilities-col">
+                <img src="images/delivery.png">
+                <h3>Home Delivery</h3>
+                <p>Quick, hassle-free home delivery. Fresh vegetables at your doorstep.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/seasonal.png">
+                <h3>Seasonal Specials</h3>
+                <p>Discover a wide selection of fresh, locally sourced vegetables that updates with the seasons.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/customer.png">
+                <h3>24*7 Customer Support</h3>
+                <p>Round-the-clock customer support. Prompt assistance for all your inquiries and concerns.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------------------------- COUNTER ----------------------------->
+    <section class="counter">
+        <div class="counter-row">
+            <div class="counter-col">
+                <h2 class="counter-nums" data-val="23000">0+</h2>
+                <p>Deliveries Completed</p>
+            </div>
+            <div class="counter-col">
+                <h2 class="counter-nums" data-val="51000">0+</h2>
+                <p>Kilos of Freshness Savored</p>
+            </div>
+            <div class="counter-col">
+                <h2 class="counter-nums" data-val="8500">0+</h2>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+    </section>
+    <script src="counter.js"></script>
+
+
+    <!----------------------------- REVIEWS ----------------------------->
+    <section class="reviews">
+        <h1>Hear from our Customers</h1><br><br>
+        <div class="reviews-row">
+            <div class="reviews-col">
+                <img src="images/user1.png">
+                <div>
+                    <p>
+                        I just wanted to say how impressed I am with Green Grocer! It's been a game-changer for my vegetable shopping. The real-time prices and market comparisons have saved me money, and I love the fresh produce I find through the platform. Thank you for making
+                        my grocery shopping experience so much better!
+                    </p>
+                    <h3>Ajay Bhatt</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="reviews-col">
+                <img src="images/user2.png">
+                <div>
+                    <p>
+                        I can't believe I didn't discover Green Grocer earlier! This site is fantastic! The user-friendly interface, accurate pricing information, and the ability to support local vendors make it stand out from other platforms. It's now my go-to place for all
+                        things veggies. Highly recommended to all vegetable lovers out there!
+                    </p>
+                    <h3>Shreya Mishra</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------- FOOTER ----------------------------->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+</html>

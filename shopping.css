@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+
+/* ----------------------------- MAIN SECTION --------------------------- */
+
+main.shopping-page {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+.item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item .price {
+    font-weight: bold;
+    color: green;
+}
+
+.item label {
+    display: block;
+    margin-top: 10px;
+}
+
+.item select {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+button.add-to-cart {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.add-to-cart:hover {
+    background-color: darkgreen;
+}
+
+
+/* ----------------------------- LEFT SECTION --------------------------- */
+
+
+/* Styling for the filter section */
+
+.filter-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid #cccccc;
+    overflow-y: auto;
+    height: 100vh;
+    z-index: 3;
+    display: none;
+}
+
+.filter-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555555;
+}
+
+.filter-section select,
+.filter-section input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.filter-section .apply-filter-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.filter-section .apply-filter-btn:hover {
+    background-color: #45a049;
+}
+
+.price-input {
+    width: 100%;
+    display: flex;
+    margin: 30px 0 35px;
+}
+
+.price-input .field {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+
+.field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 15px;
+    margin-left: 12px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price-input .separator {
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.slider .progress {
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #8fff34;
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #0db74b;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #104a52;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ----------------------------- FILTER HIDE SECTION --------------------------- */
+
+.filter-toggle {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    z-index: 4;
+}
+
+.filter-toggle-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px rgba(255, 3, 108, 0.2);
+    transition: all 0.3s ease;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+}
+
+.filter-toggle-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.filter-toggle-btn:focus {
+    box-shadow: 0 0 5px rgba(255, 0, 242, 0.3);
+}
+
+.filter-toggle-btn:focus {
+    box-shadow: 0 0 5px rgba(234, 0, 255, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.filter-toggle-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* ----------------------------- FILTER HIDE SECTION ENDS --------------------------- */

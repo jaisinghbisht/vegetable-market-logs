@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="about-us">
+        <div class="conatiner">
+            <div class="row">
+                <div id="1">
+                    <script>
+                        load("header.html");
+
+                        function load(url) {
+                            req = new XMLHttpRequest();
+                            req.open("GET", url, false);
+                            req.send(null);
+                            document.getElementById(1).innerHTML = req.responseText;
+                        }
+                    </script>
+                </div>
+                <div class="flex">
+                    <h2>About Us</h2>
+                    <h3>Discover our team story</h3>
+                    <p>Welcome to My Vegetable Shop, your one-stop destination for fresh and organic vegetables sourced directly from local farmers. We are passionate about providing you and your family with the best quality produce, all delivered right
+                        to your doorstep</p>
+                    <p>At My Vegetable Shop, our mission is to promote healthy living and sustainable agriculture. We are committed to supporting local farmers and empowering them to grow and supply their produce while preserving the environment.</p>
+                    <section>
+                        <h2>Why Choose Us</h2>
+                        <ul>
+                            <li>Freshness Guaranteed: We take pride in offering only the freshest vegetables. Our produce comes straight from the farm to your table, ensuring maximum nutrition and taste.
+                            </li>
+                            <li>Organic and Natural: Our commitment to organic farming practices means that you can trust the purity of our vegetables without any harmful chemicals.</li>
+                            <li>Supporting Local Farmers: By choosing My Vegetable Shop, you contribute to the growth of local farming communities and their sustainable livelihood.</li>
+                            <li>Wide Selection: From leafy greens to seasonal favorites, we have a wide variety of vegetables to meet your culinary needs.</li>
+                            <li>Convenience: With our easy-to-navigate website, you can order your vegetables online and have them delivered to your home hassle-free.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Our Commitment</h2>
+                        <p>At My Vegetable Shop, we are committed to your satisfaction. We value your feedback and continuously strive to improve our services. If you have any questions, suggestions, or concerns, please feel free to contact us at contact@myvegetableshop.com
+                            or call us at (123) 456-7890.
+                        </p>
+                    </section>
+                    </main>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f fa-fade"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-fade"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-fade"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in fa-fade"></i></a>
+                    </div>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="flex">
+                    <img src="photo-1518843875459-f738682238a6.jfif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="4">
+            <script>
+                load("footer.html");
+
+                function load(url) {
+                    req = new XMLHttpRequest();
+                    req.open("GET", url, false);
+                    req.send(null);
+                    document.getElementById(4).innerHTML = req.responseText;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
